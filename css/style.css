@@ -89,11 +89,11 @@ font header .navbar-default .navbar-nav li a:hover {
 	Slider Start 
 --*/
 #slider {
-  background: url("../img/slider-bg.jpg") no-repeat;
+  background: url("../img/slider-bg-copy.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: 10% 0%;
-  padding: 200px 0 280px 0;
+  padding: 100px 0 108px 0;
   position: relative;
 }
 #slider:before {
@@ -168,7 +168,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #service .service-item h4 {
   padding-top: 20px;
   margin: 0;
-  color: #666;
+  /* color: #666; */
 }
 #service .service-item p {
   color: #888;
@@ -223,7 +223,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	Feature Start 
 --*/
 #feature {
-  background: url("../img/featue-bg.jpg");
+  background: url("../img/featue-bgcopy.jpg");
   background-position: 50% 94px;
   width: 100%;
   display: block;
@@ -796,4 +796,134 @@ footer .footer-manu ul li a {
 }
 footer .footer-manu ul li a:hover {
   color: #000;
+}
+
+
+.effect {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+/* background-color: - add your own background-color */
+  font-family: 'Roboto', sans-serif; /* put your font-family */
+  size: 18px;
+  padding: 8px 0px;
+  width: 150px;
+  /* border-radius: 6px; */
+  overflow: hidden;
+  background-color: #86181e;
+}
+
+
+
+.effect.effect-2 {
+  transition: all 0.2s linear 0s;
+}
+  
+.effect.effect-2:before {
+    content: "\f0a4";
+    font-family: FontAwesome;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 30px;
+    height: 100%;
+    background-color: #f7989dab;
+    /* border-radius: 0px 6px 6px 0px; */
+    transition: all 0.2s linear 0s;
+    text-align: center;
+  }
+  
+.effect.effect-2:hover {
+  text-indent: -30px;
+  color: white !important;
+}
+.effect.effect-2:hover:before {
+    right: 0;
+    text-indent: 0px;
+    color: white;
+}
+
+h2{
+  color: #045b9b;
+}
+
+
+
+
+/* Efectis imagenes overlay */
+.content {
+  position: relative;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h4{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
 }
