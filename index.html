@@ -37,7 +37,7 @@
 
 
   </head>
-  <body>
+  <body id="home" class="homepage">
 
 
 
@@ -57,16 +57,22 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">
+                <a class="smooth-scroll navbar-brand" data-section="#home" href="#home" >
                   <img src="img/logo-copy.png" alt="Logo">
                 </a>
               </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="collapse navbar-collapse main-menu" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="work.html">Productos</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#service" data-section="#service">Productos</a></li>
+                    <li><a href="#contact" data-section="#contact">Contacto</a></li>
+                    <li class="facebook-icon">
+                      <a href="https://www.facebook.com/ICScostarica2015/"></a>
+                    </li>
+                    <li class="linked-icon">
+                      <a href="https://www.linkedin.com/in/juan-carlos-hernandez-8442561?trk=hp-identity-photo"></a>
+                    </li>
                   </ul>
                 </div><!-- /.navbar-collapse -->
               </div><!-- /.container-fluid -->
@@ -93,55 +99,36 @@
 
           <!-- First slide --> 
           <div class="slider">
-            <div class="legend"></div> 
-            <div class="content-slider"> 
-              <div class="content-txt"> 
-              <h1>International Commerce & Services</h1> 
-<!--               <h2>International Commerce & Services</h2>  -->
-              </div> 
-            </div> 
+            <div class="legend-left"></div> 
+            <div class="legend-right"></div> 
             <div class="images"> 
-              <img src="img/slider-bg-copy.jpg"> 
+              <img src="img/melform.jpg">  
             </div> 
           </div> 
 
           <!-- Second slide --> 
           <div class="slider">
-            <div class="legend"></div> 
-            <div class="content-slider"> 
-              <div class="content-txt"> 
-                <h1>Representantes de Melform Italia</h1> 
-                <!-- <h2>Representantes de Melform Italia</h2>  -->
-              </div> 
-            </div> 
+            <div class="legend-left"></div> 
+            <div class="legend-right"></div>  
             <div class="images"> 
-              <img src="img/melform.jpg">
+              <img src="img/djProducts.jpg">
             </div> 
           </div> 
 
           <!-- Third slide --> 
           <div class="slider">
             <div class="legend"></div> 
-            <div class="content-slider"> 
-              <div class="content-txt"> 
-                <h1>Representantes de DJ Productos</h1> 
-                <!-- <h2>Representantes de DJ Productos</h2>  -->
-              </div> 
-            </div> 
+            <div class="legend-left"></div> 
+            <div class="legend-right"></div> 
             <div class="images"> 
-              <img src="img/djProducts.jpg"> 
+              <img src="img/melform.jpg"> 
             </div> 
           </div>
           <div class="slider">
-            <div class="legend"></div>
-            <div class="content-slider">
-              <div class="content-txt">
-                <h1>Soluciones Logísticas Innovadoras</h1> 
-                <!-- <h2>Representantes de DJ Productos</h2> --> 
-              </div>
-            </div>
+            <div class="legend-left"></div> 
+            <div class="legend-right"></div>
             <div class="image">
-              <img src="img/slider-bg-copy.jpg">
+              <img src="img/djProducts.jpg">
             </div>
           </div> 
         </div> 
@@ -156,6 +143,29 @@
           </ul>
         </div>
       </div>
+      <section class="clients">
+        <div class="container-fluid">
+          <div class="row text-center">
+            <div class="col-md-4">
+              <div class="wrapper-img">
+                <img src="img/logo-melform.png" alt="">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="titulo-clients">
+                <h1>
+                  Representantes Exclusivos
+                </h1>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="wrapper-img dj-productos-wrapper">
+                <img src="img/logo-dj.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
   <!--   </section> -->
     <!-- Wrapper Start -->
@@ -211,19 +221,52 @@
         <div class="row">
           <div class="section-title">
             <h2>Productos</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
           </div>
         </div>
         <div class="row ">
-          <div class="col-sm-6 col-md-3">
+          <div class="col-sm-6 col-md-4 special-hover">
             <div class="service-item">
               <div class="content">
+                <div class="title-products">
+                    <h1>Cajas 
+                    </br>
+                    Isotérmicas</h1>
+                </div>
                 <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
                   <div class="content-overlay"></div>
-                  <img class="content-image" src="img/cajas-isotermicas.png">
+                  <img class="content-image" src="img/cajas-3.jpg">
                   <div class="content-details fadeIn-bottom">
-                    <h4>Cajas Isotérmicas</h4>
-                    <p class="content-text"><a class="effect effect-2" href="#">Ver Más</a></p>
+                    <h2>Cajas
+                      </br>
+                      Isotérmicas
+                    </h2>
+                    <p>
+                      Temperatura y transporte </br> ACTIVE LINE
+                      <!-- <a class="effect effect-2" href="#">Ver Más</a> -->
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 special-hover">
+            <div class="service-item">
+              <div class="content">
+                <h1 class="title-products">Cajas 
+                </br>
+                Isotérmicas</h1>
+                <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                  <div class="content-overlay"></div>
+                  <img class="content-image" src="img/cajas-2.jpg">
+                  <div class="content-details fadeIn-bottom">
+                    <h2>Cajas
+                      </br>
+                      Isotérmicas
+                    </h2>
+                    <p>
+                      Temperatura y transporte </br> ACTIVE LINE
+                      <!-- <a class="effect effect-2" href="#">Ver Más</a> -->
+                    </p>
                   </div>
                 </a>
               </div>
@@ -232,15 +275,24 @@
               <p><a class="effect effect-2" href="#" title="Learn More">Ver Más</a></p> -->
             </div>
           </div>
-          <div class="col-sm-6 col-md-3">
+          <div class="col-sm-6 col-md-4 special-hover">
             <div class="service-item">
               <div class="content">
+                <h1 class="title-products">Cajas 
+                </br>
+                Isotérmicas</h1>
                 <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
                   <div class="content-overlay"></div>
-                  <img class="content-image" src="img/cajas-isotermicas.png">
+                  <img class="content-image" src="img/cajas-3.jpg">
                   <div class="content-details fadeIn-bottom">
-                    <h4>Remolcadores Electricos</h4>
-                    <p class="content-text"><a class="effect effect-2" href="#">Ver Más</a></p>
+                    <h2>Cajas
+                      </br>
+                      Isotérmicas
+                    </h2>
+                    <p>
+                      Temperatura y transporte </br> ACTIVE LINE
+                      <!-- <a class="effect effect-2" href="#">Ver Más</a> -->
+                    </p>
                   </div>
                 </a>
               </div>
@@ -249,15 +301,24 @@
               <p><a class="effect effect-2" href="#" title="Learn More">Ver Más</a></p> -->
             </div>
           </div>
-          <div class="col-sm-6 col-md-3">
+          <div class="col-sm-6 col-md-4 special-hover">
             <div class="service-item">
               <div class="content">
+                <h1 class="title-products">Remolcadores 
+                </br>
+                Eléctricos</h1>
                 <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
                   <div class="content-overlay"></div>
-                  <img class="content-image" src="img/cajas-isotermicas.png">
+                  <img class="content-image" src="img/cajas-2.jpg">
                   <div class="content-details fadeIn-bottom">
-                    <h4>Contenedores Refrigerados</h4>
-                    <p class="content-text"><a class="effect effect-2" href="#">Ver Más</a></p>
+                    <h2>Remolcadores
+                      </br>
+                      Eléctricos
+                    </h2>
+                    <p>
+                      Movilización de equipos
+                      <!-- <a class="effect effect-2" href="#">Ver Más</a> -->
+                    </p>
                   </div>
                 </a>
               </div>
@@ -266,64 +327,61 @@
               <p><a class="effect effect-2" href="#" title="Learn More">Ver Más</a></p> -->
             </div>
           </div>
-          <div class="col-sm-6 col-md-3">
+          <div class="col-sm-6 col-md-4 special-hover">
             <div class="service-item">
               <div class="content">
+                <h1 class="title-products">Contenedores</h1>
                 <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
                   <div class="content-overlay"></div>
-                  <img class="content-image" src="img/cajas-isotermicas.png">
+                  <img class="content-image" src="img/cajas-5.jpg">
                   <div class="content-details fadeIn-bottom">
-                    <h4>Contenedores Secos</h4>
-                    <p class="content-text"><a class="effect effect-2" href="#">Ver Más</a></p>
+                    <h2>Contenedores
+                    </h2>
+                    <p>
+                      Descripción
+                      <!-- <a class="effect effect-2" href="#">Ver Más</a> -->
+                    </p>
                   </div>
                 </a>
               </div>
-              <!-- <h4>Cajas Isotérmicas</h4>
-              <p class = "text-left">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-              <p><a class="effect effect-2" href="#" title="Learn More">Ver Más</a></p> -->
             </div>
           </div>
-          <div class="col-sm-6 col-md-3">
+           <div class="col-sm-6 col-md-4 special-hover">
             <div class="service-item">
               <div class="content">
+                <h1 class="title-products">Partes y
+                </br>
+                Suministros</h1>
                 <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
                   <div class="content-overlay"></div>
-                  <img class="content-image" src="img/cajas-isotermicas.png">
+                  <img class="content-image" src="img/cajas-3.jpg">
                   <div class="content-details fadeIn-bottom">
-                    <h4>Partes y Suministros</h4>
-                    <p class="content-text"><a class="effect effect-2" href="#" title="Learn More">Ver Más</a></p>
+                    <h2>Partes y
+                      </br>
+                      Smunistros
+                    </h2>
+                    <p>
+                       Descripción
+                      <!-- <a class="effect effect-2" href="#">Ver Más</a> -->
+                    </p>
                   </div>
                 </a>
               </div>
-<!--               <h4>Cajas Isotérmicas</h4>
-              <p class = "text-left">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-              <p><a class="effect effect-2" href="#" title="Learn More">Ver Más</a></p> -->
             </div>
+          </div>
+          <div class="col-xs-12">
+            <p class="mt-5">
+              <a class="effect effect-2" href="productos.html">Ver Más productos</a>
+            </p>
           </div>
         </div>
       </div>
     </section>
-    <!-- Call to action Start -->
-    <!-- <section id="call-to-action">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="block">
-              <h2>Representantes de Melfom Italia</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- Content Start -->
-
-
     <section id="contact">
       <div class="container-fluid  text-center">
         <div class="row">
           <div class="section-title">
             <h2>Contacto</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
           </div>
           <div class="col-md-12">
             <div id="contact_form" class="text-left">
@@ -358,7 +416,7 @@
                     <textarea cols="40" rows="10" name="comment" id="comment" class="required" ></textarea>
                   </div>
                   <div>
-                    <input type="submit" value="Submit" class="submit">
+                    <input type="submit" value="ENVIAR" class="submit">
                   </div>
                 </fieldset>
               </form>
@@ -372,16 +430,61 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <div class="social-nav type-3">
-              <li><a href="https://www.linkedin.com/in/juan-carlos-hernandez-8442561?trk=hp-identity-photo" class="twitter" title=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-              <li><a href="https://www.facebook.com/ICScostarica2015/" class="facebook" title=""><i class="fa fa-facebook"></i></a></li>
+          <div class="col-md-3">
+            <div class="border-right-white">
+              <h2><i class="fa fa-map-marker" aria-hidden="true"></i> Dirección</h2>
+              <p>
+                Escazú, San José,Costa Rica.
+              </p>
             </div>
-            <p>2016. Copyright ICS S.A. Costa Rica</p>
+          </div>
+          <div class="col-md-3">
+            <div class="border-right-white">
+              <h2><i class="fa fa-envelope" aria-hidden="true"></i> Correo</h2>
+              <p>
+                <a class="auto-generated-link" data-auto-recognition="true" data-content="info@icscostarica.com" href="mailto:info@icscostarica.com" data-type="mail">info@icscostarica.com</a>
+                </br>
+                <a class="auto-generated-link" data-auto-recognition="true" data-content="jchernandez@icscostarica.com" href="mailto:jchernandez@icscostarica.com" data-type="mail">jchernandez@icscostarica.com</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="border-right-white">
+              <h2><i class="fa fa-phone" aria-hidden="true"></i> Teléfono</h2>
+              <p>
+                +506 2215 0147
+                </br>
+                +506 8442 4224
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="">
+              <h2><i class="fa fa-share-square-o" aria-hidden="true"></i> Siguenos</h2>
+              <p class="social-network">
+                <a href="https://www.facebook.com/ICScostarica2015/">
+                  <img src="img/facebook.png" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/juan-carlos-hernandez-8442561?trk=hp-identity-photo">
+                  <img src="img/linkedin.png" alt="">
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </footer>
+    <section class="copyright">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center">2016. Copyright ICS S.A. Costa Rica</p>
+          </div>
+        </div>
+      </div>  
+    </section>
+      
+    </div>
             
             
 <!--   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
