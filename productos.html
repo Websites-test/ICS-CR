@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/ionicons.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/bootstrap-lightbox.min.css">
     
     <!-- Js -->
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -28,6 +29,7 @@
     <script src="js/jquery.counterup.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/min/bootstrap-lightbox.min.js"></script>
   </head>
   <body>
     <!-- Header Start -->
@@ -179,38 +181,26 @@
                   </div>
                   <div class="portfolio-contant">
                     <ul id="portfolio-contant-active">
-                        <li class="mix Cargo-line">
-                          <a href="#">
-                            <img src="img/productos/cajas/gráfico1-01.png" alt="">
-                            <div class="overly">
-                              <div class="position-center">
-                                <h2>Titulo</h2>
-                                <p>Labore et dolore magna aliqua. Ut enim ad </p>
-                              </div>
-                            </div>
-                          </a>
+                        <li id="profile-grid" class="mix Cargo-line">
+                          <div class="profile">
+                            <a href="#" class="thumb">
+                              <img src="img/productos/cajas/gráfico1-01.png" class="img-responsive" data-toggle="modal" data-target=".modal-profile-lg">
+                            </a>
+                          </div>
                         </li>
-                        <li class="mix Cargo-line">
-                          <a href="#">
-                            <img src="img/productos/cajas/gráfico1-02.png" alt="">
-                            <div class="overly">
-                              <div class="position-center">
-                                <h2>Titulo</h2>
-                                <p>Labore et dolore magna aliqua. Ut enim ad </p>
-                              </div>
-                            </div>
-                          </a>
+                        <li id="profile-grid" class="mix Cargo-line">
+                          <div class="profile">
+                            <a href="#"  class="thumb">
+                              <img src="img/productos/cajas/gráfico1-02.png" class="img-responsive" data-toggle="modal" data-target=".modal-profile-lg">
+                            </a>
+                          </div>
                         </li>
-                        <li class="mix biomed-line">
-                          <a href="#">
-                            <img src="img/productos/cajas/gráfico1-03.png" alt="">
-                            <div class="overly">
-                              <div class="position-center">
-                              <h2>Titulo</h2>
-                                <p>Labore et dolore magna aliqua. Ut enim ad </p>                            
-                              </div>
-                            </div>
-                          </a>
+                        <li class="mix biomed-line" id="profile-grid">
+                          <div class="profile">
+                            <a href="#">
+                              <img src="img/productos/cajas/gráfico1-03.png" alt="" class="img-responsive" data-toggle="modal" data-target=".modal-profile-lg">
+                            </a>
+                          </div>
                         </li>
                         <li class="mix biomed-line">
                           <a href="#">
@@ -447,6 +437,23 @@
                           </div>
                         </a>
                       </li> -->
+                      <!-- .modal-profile -->
+                      <div class="modal fade modal-profile" tabindex="-1" role="dialog" aria-labelledby="modalProfile" aria-hidden="true">
+                          <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button class="close" type="button" data-dismiss="modal">×</button>
+                                <h3 class="modal-title"></h3>
+                              </div>
+                              <div class="modal-body">
+                              </div>
+                              <div class="modal-footer">
+                                <button class="btn btn-default" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      <!-- //.modal-profile -->
                     </ul>
                   </div>
                 </div>
