@@ -91,11 +91,6 @@ $(document).ready(function(){
 	$('.main-menu ul li a,.smooth-scroll').scrollingTo();
 
 
-
-
-    
-
-
 });
 
 
