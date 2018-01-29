@@ -1,24 +1,7 @@
 $(document).ready(function(){
 
-
 	$("#portfolio-contant-active").mixItUp();
 
-
-	$("#testimonial-slider").owlCarousel({
-	    paginationSpeed : 500,      
-	    singleItem:true,
-	    autoPlay: 3000,
-	});
-
-
-
-
-	$("#clients-logo").owlCarousel({
-		autoPlay: 3000,
-		items : 5,
-		itemsDesktop : [1199,5],
-		itemsDesktopSmall : [979,5],
-	});
 
 	$("#works-logo").owlCarousel({
 		autoPlay: 3000,
@@ -26,17 +9,6 @@ $(document).ready(function(){
 		itemsDesktop : [1199,5],
 		itemsDesktopSmall : [979,5],
 	});
-
-
-	// google map
-		var map;
-		function initMap() {
-		  map = new google.maps.Map(document.getElementById('map'), {
-		    center: {lat: -34.397, lng: 150.644},
-		    zoom: 8
-		  });
-		}
-
 
 	// Counter
 
@@ -90,6 +62,20 @@ $(document).ready(function(){
 
 	$('.main-menu ul li a,.smooth-scroll').scrollingTo();
 
+	$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('.go-top').fadeIn(200);
+				} else {
+					$('.go-top').fadeOut(200);
+				}
+			});
+			
+			// Animate the scroll to top
+			$('.go-top').click(function(event) {
+				event.preventDefault();
+				
+				$('html, body').animate({scrollTop: 0}, 300);
+			})
 
 });
 

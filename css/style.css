@@ -1563,3 +1563,27 @@ input[type="email"]:invalid ~ .form-input-validation::after {
   margin:  0;
 }
 
+.go-top {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 12px;
+  padding: 1em;
+  display: none;
+  z-index: 10;
+}
+
+.go-top:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color:  #fff;
+}
+
+
+@media(max-width: 450px){
+  .col-xxs-12{
+    width: 100%;
+  }
+}
