@@ -88,6 +88,16 @@ $(document).ready(function(){
       	$(".modal-profile").modal({show:true});
     });
 
+    $('.container-fluid .navbar a').click(function(){ 
+
+    	var $target = $($(this).data('target')); 
+
+    	if(!$target.hasClass('in'))
+
+        	$('.container-fluid .in').removeClass('in').height(0);
+
+	});
+
 
 });
 
