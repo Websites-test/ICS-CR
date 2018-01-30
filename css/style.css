@@ -1609,3 +1609,8 @@ input[type="email"]:invalid ~ .form-input-validation::after {
     width: 80%;
   }
 }
+
+.modal-footer{
+  border-top: 0;
+}
+

@@ -97,8 +97,6 @@ $(document).ready(function(){
         	$('.container-fluid .in').removeClass('in').height(0);
 
 	});
-    
-
 
 });
 
