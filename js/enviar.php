@@ -1,0 +1,15 @@
+<?php
+
+$destino = "digital@seppublicidad.com";
+$nombre = $_POST["name"];
+$correo = $_POST["email"];
+$telefono = $_POST["cellphone"];
+$direccion = $_POST["address"];
+$mensaje = $_POST["comment"];
+
+
+$contenido = "Nombre: ".$nombre . "\nCorreo: ".$correo . "\nTeléfono: " .$telefono. "\nDirección: " . $direccion."\nMensaje: " . $mensaje;
+
+mai($destino,"Contacto", $contenido);
+
+?>
