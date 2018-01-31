@@ -390,7 +390,7 @@
           </div>
           <div class="col-md-12">
             <div id="contact_form" class="text-left">
-              <form action="js/enviar.php" method="post">
+              <form action="enviar.php" method="post">
                 <fieldset>
                   <div class="form-input" >
                     <label for="name" >Nombre：</label>
