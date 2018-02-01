@@ -390,7 +390,7 @@
           </div>
           <div class="col-md-12">
             <div id="contact_form" class="text-left">
-              <form action="enviar.php" method="post">
+              <form  method="post" onsubmit="return enviar();">
                 <fieldset>
                   <div class="form-input" >
                     <label for="name" >Nombre：</label>
@@ -425,6 +425,7 @@
                   </div>
                 </fieldset>
               </form>
+              <div id="respa"></div>
             </div>
           </div>
         </div>

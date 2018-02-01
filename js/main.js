@@ -98,6 +98,26 @@ $(document).ready(function(){
 
 	});
 
+	function enviar(){
+		var nombre = document.getElementsByName("name").value;
+		var correo = document.getElementsByName("email").value;
+		var telefono = document.getElementsByName("cellphone").value;
+		var direccion = document.getElementsByName("address").value;
+		var mensaje = document.getElementsByName("comment");
+
+		var dataen = nombre + correo + telefono + direccion + mensaje;
+
+		$.$.ajax({
+			url: 'enviar.php',
+			type: 'POST',
+			data: dataen,
+			success:function(resp){
+				$("#respa").html(resp);
+			}
+		})
+		return false;
+	}
+
 });
 
 
